@@ -1,3 +1,9 @@
+# revision 15878
+# category Package
+# catalog-ctan /macros/latex/contrib/labelcas
+# catalog-date 2007-03-08 21:58:53 +0100
+# catalog-license lppl
+# catalog-version 1.12
 Name:		texlive-labelcas
 Version:	1.12
 Release:	1
@@ -49,6 +55,7 @@ action resulting from \lotlabelcase may be written to a macro).
 #- source
 %doc %{_texmfdistdir}/source/latex/labelcas/labelcas.dtx
 %doc %{_texmfdistdir}/source/latex/labelcas/labelcas.ins
+%doc %{_tlpkgobjdir}/*.tlpobj
 
 #-----------------------------------------------------------------------
 %prep
@@ -59,3 +66,5 @@ action resulting from \lotlabelcase may be written to a macro).
 %install
 mkdir -p %{buildroot}%{_texmfdistdir}
 cp -fpar tex doc source %{buildroot}%{_texmfdistdir}
+mkdir -p %{buildroot}%{_tlpkgobjdir}
+cp -fpa tlpkg/tlpobj/*.tlpobj %{buildroot}%{_tlpkgobjdir}
