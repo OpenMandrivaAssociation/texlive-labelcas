@@ -6,7 +6,7 @@
 # catalog-version 1.12
 Name:		texlive-labelcas
 Version:	1.12
-Release:	4
+Release:	5
 Summary:	Check the existence of labels, and fork accordingly
 Group:		Publishing
 URL:		http://www.ctan.org/tex-archive/macros/latex/contrib/labelcas
