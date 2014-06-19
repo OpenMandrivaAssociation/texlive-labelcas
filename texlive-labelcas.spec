@@ -1,16 +1,16 @@
 # revision 15878
 # category Package
 # catalog-ctan /macros/latex/contrib/labelcas
-# catalog-date 2007-03-08 21:58:53 +0100
-# catalog-license lppl
+# catalog-date 2014-01-08 11:19:39 +0100
+# catalog-license lppl1.3
 # catalog-version 1.12
 Name:		texlive-labelcas
 Version:	1.12
-Release:	7
+Release:	8
 Summary:	Check the existence of labels, and fork accordingly
 Group:		Publishing
 URL:		http://www.ctan.org/tex-archive/macros/latex/contrib/labelcas
-License:	LPPL
+License:	LPPL1.3
 Source0:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/labelcas.tar.xz
 Source1:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/labelcas.doc.tar.xz
 Source2:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/labelcas.source.tar.xz
@@ -20,10 +20,10 @@ Requires(pre):	texlive-tlpkg
 Requires(post):	texlive-kpathsea
 
 %description
-The package defines two commands: - \eachlabelcase, which
+The package defines two commands: \eachlabelcase, which
 distinguishes whether a set of labels is defined, and for each
 label either queues action accordingly, or appends the action
-to a macro; and - \lotlabelcase, which takes a comma-separated
+to a macro; and \lotlabelcase, which takes a comma-separated
 list of label names, and distinguishes the resulting action on
 whether all were defined, whether none were defined, whether
 not all were defined, or whether the lest is empty (again, the
@@ -55,17 +55,3 @@ action resulting from \lotlabelcase may be written to a macro).
 %install
 mkdir -p %{buildroot}%{_texmfdistdir}
 cp -fpar tex doc source %{buildroot}%{_texmfdistdir}
-
-
-%changelog
-* Wed Jan 04 2012 Paulo Andrade <pcpa@mandriva.com.br> 1.12-2
-+ Revision: 753073
-- Rebuild to reduce used resources
-
-* Sat Nov 05 2011 Paulo Andrade <pcpa@mandriva.com.br> 1.12-1
-+ Revision: 718800
-- texlive-labelcas
-- texlive-labelcas
-- texlive-labelcas
-- texlive-labelcas
-
