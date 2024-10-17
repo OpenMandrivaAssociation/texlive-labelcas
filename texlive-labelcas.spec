@@ -9,7 +9,7 @@ Version:	1.12
 Release:	13
 Summary:	Check the existence of labels, and fork accordingly
 Group:		Publishing
-URL:		http://www.ctan.org/tex-archive/macros/latex/contrib/labelcas
+URL:		https://www.ctan.org/tex-archive/macros/latex/contrib/labelcas
 License:	LPPL1.3
 Source0:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/labelcas.tar.xz
 Source1:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/labelcas.doc.tar.xz
